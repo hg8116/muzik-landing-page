@@ -1,18 +1,23 @@
 "use client"
 
 import Link from "next/link"
+import { FC } from "react"
 
-const TextList = () => {
-  const list = [
-    "Features",
-    "About Muzik Studio",
-    "Managing Your Production Library",
-    "Collaborating with Baewatch",
-  ]
+interface TextListProps {
+  content: {
+    heading: string
+    links: string[]
+  }
+}
+
+const TextList: FC<TextListProps> = ({ content }) => {
+  const list = content.links
 
   return (
-    <div>
-      <div className="text-[#0C0C0C] font-[800] tracking-tighter">STUDIO</div>
+    <div className="w-40">
+      <div className="text-[#0C0C0C] font-[800] tracking-tighter">
+        {content.heading}
+      </div>
       {list.map((el, ind) => (
         <div className="text-sm my-2 hover:underline" key={ind}>
           <Link href="/">{el}</Link>

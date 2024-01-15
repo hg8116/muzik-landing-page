@@ -12,7 +12,10 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ userText, userImg, userName, userRole }) => {
   return (
-    <div className="card bg-[#202020] text-[#ebebebcc] rounded-[3px] p-[28px] flex flex-col gap-[25px] w-[290px] h-[216px]">
+    <div
+      className="card bg-[#202020] text-[#ebebebcc] rounded-[3px] p-[28px] flex flex-col gap-[25px] w-[290px] h-[216px]"
+      data-aos="fade-left"
+      data-aos-duration="2200">
       <div className="font-nonito font-[600]">{userText}</div>
       <div className="user-tag flex gap-3 justify-start items-center">
         <div className="user-img">

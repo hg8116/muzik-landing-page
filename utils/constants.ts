@@ -107,7 +107,7 @@ export const FooterContent = {
     heading: "BEATMAKER",
     links: ["Create Your Own Beat", "Wakapella", "Just Blaze"],
   },
-  row3col3: {
+  row2col3: {
     heading: "BLOG",
     links: [
       "Latest Posts",

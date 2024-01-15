@@ -7,7 +7,7 @@ import { Link as ScrollLink } from "react-scroll"
 const Navbar = () => {
   return (
     <div
-      className={`navbar text-sm flex justify-between px-20 py-1 items-center bg-transparent font-abel gap-10 z-10 absolute top-0 left-0 right-0
+      className={`navbar collapse md:visible text-sm flex flex-col md:flex-row justify-between px-20 py-1 items-center bg-transparent font-abel gap-10 z-10 absolute md:top-0 md:left-0 md:right-0
       `}
       role="navigation">
       <div className="left-side flex">
@@ -20,7 +20,7 @@ const Navbar = () => {
             alt="muzik-logo"
           />
         </div>
-        <div className="links-container flex gap-10 ml-20 items-center">
+        <div className="links-container flex gap-10 md:ml-20 items-center">
           <ScrollLink
             to="studio"
             spy={true}

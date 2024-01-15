@@ -24,7 +24,7 @@ const Testimony = () => {
   } = TestimonyContent.textCombos
   return (
     <div
-      className="flex flex-col bg-[#0C0C0C] text-[#ebebebe3] py-60 justify-center items-center  relative"
+      className="flex flex-col bg-[#0C0C0C] text-[#ebebebe3] py-40 md:py-60 justify-center items-center relative"
       id="community">
       <Image
         src="/assets/earth.png"
@@ -33,9 +33,9 @@ const Testimony = () => {
         alt="earth"
         className="absolute -right-0 -top-20 -z-5"
       />
-      <div className="testimony-container flex items-center gap-60">
+      <div className="testimony-container flex flex-col md:flex-row items-center gap-20 md:gap-60">
         <div
-          className="left-side flex flex-col items-start"
+          className="left-side flex flex-col text-center md:text-start items-center md:items-start"
           data-aos="fade-right"
           data-aos-duration="2000">
           <div className="text-5xl font-abel font-[800]">
@@ -53,10 +53,7 @@ const Testimony = () => {
           </button>
         </div>
         <div className={`right-side flex flex-col gap-10`}>
-          <div
-            className="first-row flex gap-10 z-10"
-            data-aos="fade-left"
-            data-aos-duration="2200">
+          <div className="first-row flex flex-col md:flex-row gap-10 z-10">
             <Card
               userText={userCards["card1"].userText}
               userImg={userCards["card1"].userImg}
@@ -70,10 +67,7 @@ const Testimony = () => {
               userRole={userCards["card2"].userRole}
             />
           </div>
-          <div
-            className="second-row flex pl-20 gap-10 z-10"
-            data-aos="fade-left"
-            data-aos-duration="2400">
+          <div className="second-row flex flex-col md:flex-row md:pl-20 gap-10 z-10">
             <Card
               userText={userCards["card3"].userText}
               userImg={userCards["card3"].userImg}
@@ -90,13 +84,13 @@ const Testimony = () => {
         </div>
       </div>
       <div
-        className="text-4xl font-nonito mt-80 mb-20 font-[800] z-10"
+        className="text-4xl font-nonito text-center mt-80 mb-20 font-[800] z-10"
         data-aos="fade-up"
         data-aos-duration="2200">
         As good as it sounds
       </div>
       <div
-        className="text-section flex gap-40"
+        className="text-section flex flex-col md:flex-row gap-40"
         data-aos="fade-up"
         data-aos-duration="2200">
         {Object.keys(textCombos).map((key) => {

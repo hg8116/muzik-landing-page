@@ -5,10 +5,10 @@ import Image from "next/image"
 const Studio = () => {
   return (
     <div
-      className="studio-container flex justify-center items-center gap-40 py-20"
+      className="studio-container flex flex-col md:flex-row justify-center items-center gap-40 py-20"
       id="studio">
       <div
-        className="left-side flex flex-col gap-2 items-start"
+        className="left-side flex flex-col gap-2 text-center md:text-left items-center md:items-start"
         data-aos="fade-right"
         data-aos-duration="2000">
         <div className="text-lg tracking-wider font-bebasNeue font-[800] text-[#606060]">

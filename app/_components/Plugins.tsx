@@ -5,7 +5,7 @@ import Image from "next/image"
 const Plugins = () => {
   return (
     <div
-      className="plugins-container flex justify-center items-center gap-40 py-20"
+      className="plugins-container flex flex-col md:flex-row justify-center items-center gap-20 md:gap-40 py-20"
       id="plugin">
       <div className="left-side animate-spin-slow">
         <Image
@@ -13,10 +13,11 @@ const Plugins = () => {
           width={600}
           height={600}
           alt="wheel.png"
+          layout="responsive"
         />
       </div>
       <div
-        className="right-side flex flex-col gap-2 items-start"
+        className="right-side flex flex-col text-center md:text-left gap-2 items-center md:items-start"
         data-aos="fade-left"
         data-aos-duration="2000">
         <div className="text-lg tracking-wider font-bebasNeue font-[800] text-[#606060]">

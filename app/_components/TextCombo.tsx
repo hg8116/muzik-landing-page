@@ -11,7 +11,7 @@ interface TextComboProps {
 
 const TextCombo: FC<TextComboProps> = ({ comboIcon, heading, subheading }) => {
   return (
-    <div className="text-combo flex flex-col gap-4 max-w-60">
+    <div className="text-combo flex flex-col text-center md:text-left items-center md:items-start gap-2 md:gap-4 max-w-60">
       <Image src={comboIcon} height={40} width={40} alt="volumeup" />
       <div className="text-nonito text-2xl font-[800] text-[#ebebebbe]">
         {heading}
