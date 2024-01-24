@@ -1,6 +1,6 @@
 # Muzik - Next.js 14 Landing Page with Tailwind CSS
 
-Welcome to the repository for our Next.js 14 landing page project using Tailwind CSS.
+Welcome to the repository of the Muzik landing page project made using Next JS 14 and Tailwind CSS.
 
 ## Project Overview
 
